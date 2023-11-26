@@ -1,5 +1,5 @@
 <h1 align="center"> Stars Counter </h1>
-[![LinkedIn][linkedin-shield][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
