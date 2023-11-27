@@ -12,4 +12,4 @@ Appena l'utente entrerà quello che vedrà sar
 
 
 [linkedin-url]: https://www.linkedin.com/in/angela-rosace-744925291/
-[product-screenshot]: /asset/img/
+[product-screenshot]: asset/img/screenshot-StarsCounter.png
