@@ -1,7 +1,7 @@
 <h1 align="center"> Stars Counter </h1>
 
 # About The Project
-[![My Js basic project][product-screenshot]](https://cunterstars.netlify.app/asset/img/screenshot-StarsCounter.png)
+![My Js basic project](/asset/img/screenshot-StarsCounter.png)
 
 This project is realized for [start2Impact](https://www.start2impact.it/)'s module "Javascript Basics" in Front-End developer course.
 
@@ -12,4 +12,3 @@ Appena l'utente entrerà quello che vedrà sar
 
 
 [linkedin-url]: https://www.linkedin.com/in/angela-rosace-744925291/
-
