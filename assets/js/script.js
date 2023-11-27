@@ -43,7 +43,7 @@ buttonRes.addEventListener("click", () => {
 
 //stella 1
 let starsImg = new Image();
-starsImg.src = "asset/img/falling-stars1.png";
+starsImg.src = "assets/img/falling-stars1.png";
 document.getElementById("attaccaStella").appendChild(starsImg);
 starsImg.classList.add("stella");
 
@@ -92,7 +92,7 @@ buttonInc.onclick = function () {
 
 //stella 2
 let starsImg2 = new Image();
-starsImg2.src = "asset/img/falling-stars2.png";
+starsImg2.src = "assets/img/falling-stars2.png";
 document.getElementById("attaccaStella").appendChild(starsImg2);
 starsImg2.classList.add("stella2");
 
