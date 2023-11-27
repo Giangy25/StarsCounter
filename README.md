@@ -1,7 +1,7 @@
 <h1 align="center"> Stars Counter </h1>
 
 # About The Project
-[![My Js basic project][product-screenshot]](https://)
+[![My Js basic project][product-screenshot]](asset/img/screenshot-StarsCounter.png)
 
 This project is realized for [start2Impact](https://www.start2impact.it/)'s module "Javascript Basics" in Front-End developer course.
 
