@@ -42,56 +42,56 @@ buttonRes.addEventListener("click", () => {
 
 
 //stella 1
-let starsImg = new Image ();
+let starsImg = new Image();
 starsImg.src = "asset/img/falling-stars1.png";
 document.getElementById("attaccaStella").appendChild(starsImg);
 starsImg.classList.add("stella");
 
 //funzione per far muovere la stella 1
-buttonInc.onclick = function() {
+buttonInc.onclick = function () {
   starsImg.style.visibility = "visible";
   starsImg.style.transform = "rotate(260deg)";
 
-    //serve per sistemare il layout mobile
-    const mediaQuery = window.matchMedia('(max-width: 767px)')
-    if (mediaQuery.matches) {
+  //serve per sistemare il layout mobile
+  const mediaQuery = window.matchMedia('(max-width: 767px)')
+  if (mediaQuery.matches) {
 
-      //animazione per mobile
-      starsImg.style.transform = "rotate(270deg)";
-    var animation = anime.timeline ({
+    //animazione per mobile
+    starsImg.style.transform = "rotate(270deg)";
+    var animation = anime.timeline({
       autoplay: true,
     });
-  
+
     animation
-    .add({
-      targets: '.stella ',
-      translateX: -370,
-      translateY: 260,
-      duration: 280,
-      easing: 'easeInOutSine'
-    })
+      .add({
+        targets: '.stella ',
+        translateX: -370,
+        translateY: 260,
+        duration: 280,
+        easing: 'easeInOutSine'
+      })
     buttonInc.onclick = animation.play;
   } else {
 
-   //animazione base
-  var animation = anime.timeline ({
-    autoplay: true,
-  });
+    //animazione base
+    var animation = anime.timeline({
+      autoplay: true,
+    });
 
-  animation
-  .add({
-    targets: '.stella ',
-    translateX: -650,
-    translateY: 600,
-    duration: 380,
-    easing: 'easeInOutSine'
-  })
-  buttonInc.onclick = animation.play;
-}
+    animation
+      .add({
+        targets: '.stella ',
+        translateX: -650,
+        translateY: 600,
+        duration: 380,
+        easing: 'easeInOutSine'
+      })
+    buttonInc.onclick = animation.play;
+  }
 }
 
 //stella 2
-let starsImg2 = new Image ();
+let starsImg2 = new Image();
 starsImg2.src = "asset/img/falling-stars2.png";
 document.getElementById("attaccaStella").appendChild(starsImg2);
 starsImg2.classList.add("stella2");
@@ -104,38 +104,40 @@ buttonDec.onclick = function () {
 
   const mediaQuery = window.matchMedia('(max-width: 767px)');
   if (mediaQuery.matches) {
+    
     //animazione per mobile inversa
     starsImg2.style.transform = "rotate(85deg)";
     var animation = anime.timeline({
       autoplay: true,
     })
-  
+
     animation
-    .add ({
-      targets: '.stella2',
-      opacity: 2,
-      translateX: -1700,
-      translateY: 900,
-      duration: 450,
-      easing: 'easeInOutSine'
-    })
+      .add({
+        targets: '.stella2',
+        opacity: 2,
+        translateX: -1700,
+        translateY: 900,
+        duration: 450,
+        easing: 'easeInOutSine'
+      })
     buttonDec.onclick = animation.play;
   } else {
-//animazione stella inversa
-  var animation = anime.timeline({
-    autoplay: true,
-  })
 
-  animation
-  .add ({
-    targets: '.stella2',
-    opacity: 2,
-    translateX: -650,
-    translateY: 600,
-    duration: 380,
-    easing: 'easeInOutSine'
-  })
-  buttonDec.onclick = animation.play;
+    //animazione stella inversa
+    var animation = anime.timeline({
+      autoplay: true,
+    })
 
-}
+    animation
+      .add({
+        targets: '.stella2',
+        opacity: 2,
+        translateX: -650,
+        translateY: 600,
+        duration: 380,
+        easing: 'easeInOutSine'
+      })
+    buttonDec.onclick = animation.play;
+
+  }
 }
