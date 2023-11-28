@@ -1,26 +1,30 @@
-<h1> Stars Counter </h1> 
-<img src="assets/img/falling-stars1.png" width="40" heigth="40" >
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-## About The Project
+# Stars Counter 
 
 <img src="assets/img/Screenshot-StarsCounter.png" width="600" heigth="300">
 
 This project is realized for [start2Impact](https://www.start2impact.it/)'s module "Javascript Basics" in Front-End developer course.
 
 ## The assignment: 
-la consegna di questo progetto era di creare un counter. Un app che consete all'utente di aumentare o diminuire un valore. 
-Appena l'utente entrerà quello che vedrà sar
+La consegna di questo progetto era di creare un counter. Un app che consete all'utente di aumentarne o diminuirne il valore. 
+L'utente appena entrerà nella pagina, vedrà il valore di partenza del counter, che sarà 0 ed avrà a disposizione due pulsanti +/- per cambiare il valore del counter. Io vedendo alcuni esempi ho aggiunto anche il pulsante Reset per poter azzerare il counter al valore iniziale.
 
-### Idea:
+## The Idea:
+Per il tema, ho voluto usare uno sfondo stellato con le montagne. Appena l'utente cliccherà sul pulsante +, vedrà una stella cadente, invece se clicca il pulsante -, la stella tornerà indietro. 
+Quest'animazione l'ho fatta avvalendomi della libreria JavaScript "anime.js". 
 
-#### Built With:
+### Built With:
+- HTML
+- CSS
+- JavaScript
 
-##### Contact: 
+### Contact: 
 
+🔗 Project Link : [Stars Counter](https://cunterstars.netlify.app/)
 
-🔗Project Link: [Stars Counter] (https://...);
+🔗 Portfolio Link : [Portfolio](https://giangy25.github.io/)
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 [linkedin-url]: https://www.linkedin.com/in/angela-rosace-744925291/
