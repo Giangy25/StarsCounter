@@ -1,7 +1,11 @@
-<h1 align="center"> Stars Counter </h1>
+<h1> Stars Counter </h1> 
+<img src="assets/img/falling-stars1.png" width="40" heigth="40" >
 
-# About The Project
-![My Js basic project](/asset/img/Screenshot-StarsCounter.png)
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+## About The Project
+
+<img src="assets/img/Screenshot-StarsCounter.png" width="600" heigth="300">
 
 This project is realized for [start2Impact](https://www.start2impact.it/)'s module "Javascript Basics" in Front-End developer course.
 
@@ -20,3 +24,4 @@ Appena l'utente entrerà quello che vedrà sar
 
 
 [linkedin-url]: https://www.linkedin.com/in/angela-rosace-744925291/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
