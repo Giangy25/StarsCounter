@@ -65,8 +65,8 @@ buttonInc.onclick = function () {
     animation
       .add({
         targets: '.stella ',
-        translateX: -370,
-        translateY: 260,
+        translateX: -470,
+        translateY: 290,
         duration: 280,
         easing: 'easeInOutSine'
       })
