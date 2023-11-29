@@ -66,7 +66,7 @@ buttonInc.onclick = function () {
       .add({
         targets: '.stella ',
         translateX: -470,
-        translateY: 290,
+        translateY: 260,
         duration: 280,
         easing: 'easeInOutSine'
       })
