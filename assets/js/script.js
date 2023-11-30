@@ -67,8 +67,8 @@ buttonInc.onclick = function () {
         targets: '.stella ',
         translateX: -470,
         translateY: 260,
-        duration: 280,
-        easing: 'easeInOutSine'
+        duration: 480,
+        easing: 'linear'
       })
     buttonInc.onclick = animation.play;
   } else {
@@ -83,8 +83,9 @@ buttonInc.onclick = function () {
         targets: '.stella ',
         translateX: -650,
         translateY: 600,
-        duration: 380,
-        easing: 'easeInOutSine'
+        duration: 600,
+        loop: 3,
+        easing: 'linear'
       })
     buttonInc.onclick = animation.play;
   }
@@ -106,7 +107,7 @@ buttonDec.onclick = function () {
   if (mediaQuery.matches) {
     
     //animazione per mobile inversa
-    starsImg2.style.transform = "rotate(85deg)";
+    starsImg2.style.transform = "rotate(95deg)";
     var animation = anime.timeline({
       autoplay: true,
     })
@@ -115,10 +116,11 @@ buttonDec.onclick = function () {
       .add({
         targets: '.stella2',
         opacity: 2,
-        translateX: -1700,
+        translateX: -1200,
         translateY: 900,
-        duration: 450,
-        easing: 'easeInOutSine'
+        duration: 750,
+        loop: 3,
+        easing: 'linear'
       })
     buttonDec.onclick = animation.play;
   } else {
@@ -134,8 +136,8 @@ buttonDec.onclick = function () {
         opacity: 2,
         translateX: -650,
         translateY: 600,
-        duration: 380,
-        easing: 'easeInOutSine'
+        duration: 580,
+        easing: 'linear'
       })
     buttonDec.onclick = animation.play;
 

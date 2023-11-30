@@ -142,7 +142,8 @@ h1 {
 }
 
 /* stella 1 */
-.stella {
+.stella,
+.stella3 {
   position: absolute;
   display: flex;
   width: 80px;
