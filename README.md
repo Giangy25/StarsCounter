@@ -5,12 +5,13 @@
 This project is realized for [start2Impact](https://www.start2impact.it/)'s module "Javascript Basics" in Front-End developer course.
 
 ## The assignment: 
-La consegna di questo progetto era di creare un counter. Un app che consete all'utente di aumentarne o diminuirne il valore. 
-L'utente appena entrerà nella pagina, vedrà il valore di partenza del counter, che sarà 0 ed avrà a disposizione due pulsanti +/- per cambiare il valore del counter. Io vedendo alcuni esempi ho aggiunto anche il pulsante Reset per poter azzerare il counter al valore iniziale.
+The assigment of this project was to create a counter. An app which allows the user to increase o decrease the value.
+As soon as the users enters the page, will see the starting value of the counter, wich will be 0. 
+The users will have two buttons +/- available to change the value of the counter. Following some examples seen on the internet,I also added the Restet button to be able to reset the counter.
 
 ## The Idea:
-Per il tema, ho voluto usare uno sfondo stellato con le montagne. Appena l'utente cliccherà sul pulsante +, vedrà una stella cadente, invece se clicca il pulsante -, la stella tornerà indietro. 
-Quest'animazione l'ho fatta avvalendomi della libreria JavaScript "anime.js". 
+For the theme, I wantes to use a starry background with the mountains. As soon as the users clicks on the button +, they will see a shooting star, Instead if you click the button -, the star will come back.
+I made this animation using the JavaScript library "anime.js".
 
 ### Built With:
 - HTML
