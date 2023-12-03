@@ -39,7 +39,7 @@ buttonInc.onclick = function () {
     animation
       .add({
         targets: '.stella ',
-        translateX: -580,
+        translateX: -560,
         translateY: 600,
         duration: 600,
         loop: 3,
@@ -92,7 +92,7 @@ buttonDec.onclick = function () {
       .add({
         targets: '.stella2',
         opacity: 2,
-        translateX: -620,
+        translateX: -650,
         translateY: 600,
         duration: 580,
         easing: 'linear'
