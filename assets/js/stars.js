@@ -92,7 +92,7 @@ buttonDec.onclick = function () {
       .add({
         targets: '.stella2',
         opacity: 2,
-        translateX: -650,
+        translateX: -620,
         translateY: 600,
         duration: 580,
         easing: 'linear'
