@@ -57,7 +57,7 @@ h1 {
 
 
 /*sezione button*/
-#Count {
+#count {
   position: absolute;
   display: flex;
   flex-direction: column-reverse;
@@ -72,21 +72,22 @@ h1 {
   margin-bottom: 55px;
 }
 
-#buttonCnt  {
+#btnBox  {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 @media (max-width: 767px) {
-  #Count {
+  #count {
     width: 98%;
   }
 }
 
 
 /*stili ai bottoni*/
-.button {
+.button,
+.buttonR {
   background-color: transparent;
   backdrop-filter: blur(4px);
   border: solid 2px white;
@@ -143,7 +144,7 @@ h1 {
 
 /* stella 1 */
 .stella,
-.stella3 {
+.stella2 {
   position: absolute;
   display: flex;
   width: 80px;
@@ -153,18 +154,9 @@ h1 {
   z-index: -1;
 }
 
-
-/*stella 2*/
 .stella2 {
-  position: absolute;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  padding: 10px;
-  visibility: hidden;
   top: 450px;
   left: 750px;
-  z-index: -1;
 }
 
 @media (max-width: 767px){

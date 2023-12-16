@@ -1,9 +1,23 @@
+const starsBox = document.querySelector ("#attaccaStella");
+
+//funzione per creare le stelle
+function createStella (tagName, imgSrc, className) {
+  const starsImg = document.createElement(tagName);
+  starsImg.src = imgSrc;
+  starsImg.classList.add(className);
+  return starsImg;
+}
 
 //stella 1
-let starsImg = new Image();
-starsImg.src = "assets/img/falling-stars1.png";
-document.getElementById("attaccaStella").appendChild(starsImg);
-starsImg.classList.add("stella");
+const starsImg = createStella ("img", "assets/img/falling-stars1.png" ,"stella")
+
+//stella 2
+const starsImg2 = createStella ("img", "assets/img/falling-stars2.png", "stella2");
+
+//appendi le stelle
+starsBox.appendChild(starsImg);
+starsBox.appendChild(starsImg2)
+
 
 //funzione per far muovere la stella 1
 buttonInc.onclick = function () {
@@ -41,19 +55,13 @@ buttonInc.onclick = function () {
         targets: '.stella ',
         translateX: -560,
         translateY: 600,
-        duration: 600,
+        duration: 600, 
         loop: 3,
         easing: 'linear'
       })
     buttonInc.onclick = animation.play;
   }
 }
-
-//stella 2
-let starsImg2 = new Image();
-starsImg2.src = "assets/img/falling-stars2.png";
-document.getElementById("attaccaStella").appendChild(starsImg2);
-starsImg2.classList.add("stella2");
 
 
 //funzione per muovere la stella al contrario

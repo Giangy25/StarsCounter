@@ -1,42 +1,47 @@
 //struttura per il count
-const resultTxt = document.createElement('div');
-resultTxt.textContent = 0;
-document.getElementById("Count").appendChild(resultTxt);
-resultTxt.classList.add("resultTxt");
-resultTxt.setAttribute("name", "result");
+const countBox = document.querySelector("#count");
+const btnBox = document.querySelector("#btnBox");
 
 //creazione dei button
-const buttonDec = document.createElement('button');
-buttonDec.textContent = '-';
-document.getElementById("buttonCnt").appendChild(buttonDec);
-buttonDec.classList.add("button");
+function create (tagName, className, innerHTML) {
+  const element = document.createElement(tagName);
+  element.classList.add(className);
+  element.innerHTML = innerHTML;
+  return element;
+}
 
-const buttonRes = document.createElement('button');
-buttonRes.textContent = 'Reset';
-document.getElementById("buttonCnt").appendChild(buttonRes);
-buttonRes.classList.add("button");
+//creato per testo
+const resultTxt = create ("div", "resultTxt", "0");
 
-const buttonInc = document.createElement('button');
-buttonInc.textContent = '+';
-document.getElementById("buttonCnt").appendChild(buttonInc);
-buttonInc.classList.add("button");
+//creato bottoni
+const buttonDec = create("button", "button", "-");
+const buttonRes = create ("button", "buttonR", "Reset");
+const buttonInc = create ("button", "button", "+");
 
+//appendi i button
+countBox.append(resultTxt);
+btnBox.append(buttonDec, buttonRes, buttonInc);
 
 //funzioni incremento, decremento e reset
-let count = 0;
+let countTxt = 0;
 
-buttonInc.addEventListener("click", () => {
-  count++;
-  resultTxt.innerHTML = count;
-});
+btnBox.addEventListener("click", buttonclick);
 
-buttonDec.addEventListener("click", () => {
-  count--;
-  resultTxt.innerHTML = count;
-});
+function buttonclick(event){
+  const target = event.target;
 
-buttonRes.addEventListener("click", () => {
-  count = 0;
-  resultTxt.innerHTML = count;
-})
+  if(target.classList.contains("button")) {
+    if(target.innerHTML === "+"){
+      countTxt++; //incremento
+    } else if(target.innerHTML === "-"){
+      if(countTxt <= 0){
+        countTxt--; //decremento
+      }
+    }
+    resultTxt.innerHTML = countTxt;
+  } else if (target.classList.contains("buttonR")) {
+    countTxt = 0; //reset
+    resultTxt.innerHTML = countTxt;
+  }
+}
 
