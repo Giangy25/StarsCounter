@@ -110,7 +110,8 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .button {
+  .button,
+  .buttonR {
     font-size: 20px;
     width: 28%;
     height: 75%;
