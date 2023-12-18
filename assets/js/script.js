@@ -34,7 +34,7 @@ function buttonclick(event){
     if(target.innerHTML === "+"){
       countTxt++; //incremento
     } else if(target.innerHTML === "-"){
-      if(countTxt <= 0){
+      if(countTxt <= 0, countTxt => 0){
         countTxt--; //decremento
       }
     }
